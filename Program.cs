@@ -21,3 +21,6 @@ Console.WriteLine($"Minimo tra due numeri double: {CalcHelper.Minimo(4.5, 8.5)}"
 //MASSIMO
 Console.WriteLine($"Minimo tra due numeri interi: {CalcHelper.Massimo(4, 8)}");
 Console.WriteLine($"Minimo tra due numeri double: {CalcHelper.Massimo(4.5, 8.5)}");
+
+//POTENZA
+Console.WriteLine($"Elevamento a potenza: { CalcHelper.Potenza(5, 2)}");

@@ -24,5 +24,21 @@ using System.Threading.Tasks;
         public static int Massimo(int x, int y) => x > y ? x : y;
         public static double Massimo(double x, double y) => x > y ? x : y;
 
-        public static int Potenza(int x, int y) => (int)Math.Pow(x, y);
+        public static double? Potenza(double x, double y)
+        {
+            if (y == 0) return 1;
+            if (y < 0 && x == 0) return null;
+            if (x == 0) return 0;
+            if (x == 1) return 1;
+
+
+        double result = x;
+
+            for (int i = 1; i < ValoreAssoluto(y); i++)
+                {
+                    result *= x;
+                }
+
+            return y > 0 ? result : 1 / result;
+        }
 }
